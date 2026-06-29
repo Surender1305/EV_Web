@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* =========================================
+   GLOBAL FOUNDATION
+   ========================================= */
+:root {
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.1);
+  --shadow-3d: 0 20px 60px -15px rgba(0,0,0,0.25), 0 8px 20px -8px rgba(0,0,0,0.15);
+  --shadow-card: 0 10px 40px -10px rgba(0,0,0,0.12), 0 4px 12px -4px rgba(0,0,0,0.08);
+  --shadow-hover: 0 25px 70px -15px rgba(0,0,0,0.3), 0 12px 30px -10px rgba(0,0,0,0.2);
+  --shadow-inset: inset 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-glow-green: 0 0 40px rgba(16,185,129,0.25), 0 0 80px rgba(16,185,129,0.1);
+  --shadow-glow-purple: 0 0 40px rgba(139,92,246,0.25), 0 0 80px rgba(139,92,246,0.1);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "cv02","cv03","cv04","cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+   ========================================= */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(120,120,120,0.3); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(120,120,120,0.5); }
+
+/* =========================================
+   3D CARD SYSTEM
+   ========================================= */
+.card-3d {
+  transform: perspective(1200px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1), box-shadow 0.5s cubic-bezier(0.23,1,0.32,1);
+  transform-style: preserve-3d;
+  box-shadow: var(--shadow-card);
+}
+.card-3d:hover {
+  transform: perspective(1200px) rotateX(2deg) rotateY(-2deg) translateY(-8px) scale(1.01);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-float {
+  transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), box-shadow 0.4s cubic-bezier(0.23,1,0.32,1);
+  box-shadow: var(--shadow-card);
+}
+.card-float:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* =========================================
+   GLASSMORPHISM
+   ========================================= */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.glass-light {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.glass-dark {
+  background: rgba(15,23,42,0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* =========================================
+   GRADIENT HELPERS
+   ========================================= */
+.gradient-green {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0369a1 50%, #14b8a6 100%);
+}
+.gradient-purple {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #0d9488 100%);
+}
+.gradient-mesh {
+  background:
+    radial-gradient(at 20% 20%, rgba(29,78,216,0.15) 0, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(20,184,166,0.15) 0, transparent 50%),
+    radial-gradient(at 40% 60%, rgba(3,105,161,0.1) 0, transparent 50%);
+}
+.gradient-mesh-purple {
+  background:
+    radial-gradient(at 20% 20%, rgba(30,58,138,0.15) 0, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(13,148,136,0.15) 0, transparent 50%),
+    radial-gradient(at 40% 60%, rgba(29,78,216,0.1) 0, transparent 50%);
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+@keyframes float { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-8px); } }
+@keyframes pulse-glow { 0%,100%{ box-shadow: 0 0 15px rgba(16,185,129,0.3); } 50%{ box-shadow: 0 0 35px rgba(16,185,129,0.6); } }
+@keyframes shimmer { 0%{ background-position: -200% 0; } 100%{ background-position: 200% 0; } }
+@keyframes slide-up { 0%{ opacity:0; transform: translateY(30px); } 100%{ opacity:1; transform: translateY(0); } }
+@keyframes slide-in-right { 0%{ opacity:0; transform: translateX(30px); } 100%{ opacity:1; transform: translateX(0); } }
+@keyframes scale-in { 0%{ opacity:0; transform: scale(0.9); } 100%{ opacity:1; transform: scale(1); } }
+@keyframes rotate-slow { 0%{ transform: rotate(0deg); } 100%{ transform: rotate(360deg); } }
+@keyframes bounce-in { 0%{ transform: scale(0.3); opacity:0; } 50%{ transform: scale(1.05); } 70%{ transform: scale(0.9); } 100%{ transform: scale(1); opacity:1; } }
+@keyframes gradient-shift { 0%{ background-position: 0% 50%; } 50%{ background-position: 100% 50%; } 100%{ background-position: 0% 50%; } }
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-shimmer { background: linear-gradient(90deg, transparent 25%, rgba(255,255,255,0.1) 50%, transparent 75%); background-size: 200% 100%; animation: shimmer 2s infinite; }
+.animate-slide-up { animation: slide-up 0.6s cubic-bezier(0.23,1,0.32,1) forwards; }
+.animate-slide-in-right { animation: slide-in-right 0.5s cubic-bezier(0.23,1,0.32,1) forwards; }
+.animate-scale-in { animation: scale-in 0.4s cubic-bezier(0.23,1,0.32,1) forwards; }
+.animate-bounce-in { animation: bounce-in 0.6s cubic-bezier(0.23,1,0.32,1) forwards; }
+.animate-gradient { background-size: 200% 200%; animation: gradient-shift 4s ease infinite; }
+.animate-rotate-slow { animation: rotate-slow 20s linear infinite; }
+
+/* Stagger children */
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 60ms; }
+.stagger > *:nth-child(3) { animation-delay: 120ms; }
+.stagger > *:nth-child(4) { animation-delay: 180ms; }
+.stagger > *:nth-child(5) { animation-delay: 240ms; }
+.stagger > *:nth-child(6) { animation-delay: 300ms; }
+.stagger > *:nth-child(7) { animation-delay: 360ms; }
+.stagger > *:nth-child(8) { animation-delay: 420ms; }
+
+/* =========================================
+   LEAFLET OVERRIDES
+   ========================================= */
+.leaflet-container { width: 100%; height: 100%; z-index: 1; font-family: inherit; }
+.custom-marker { background: none !important; border: none !important; }
+.leaflet-popup-content-wrapper { border-radius: 16px !important; box-shadow: 0 12px 40px rgba(0,0,0,0.2) !important; }
+.leaflet-tooltip { border-radius: 12px !important; padding: 10px 14px !important; box-shadow: 0 8px 30px rgba(0,0,0,0.18) !important; border: none !important; }
+
+/* =========================================
+   INPUTS
+   ========================================= */
+input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  height: 6px; border-radius: 6px;
+  background: linear-gradient(90deg, #10B981, #06B6D4);
+  outline: none; opacity: 0.85;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2), 0 0 0 3px rgba(16,185,129,0.3);
+  transition: box-shadow 0.2s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 2px 14px rgba(0,0,0,0.25), 0 0 0 5px rgba(16,185,129,0.3);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: white; cursor: pointer; border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2), 0 0 0 3px rgba(16,185,129,0.3);
+}
+
+input[type="date"] { color-scheme: light; }
+.dark input[type="date"] { color-scheme: dark; }
+
+/* =========================================
+   3D BADGE
+   ========================================= */
+.badge-3d {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15), inset 0 1px 1px rgba(255,255,255,0.2);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   DEPTH SURFACES
+   ========================================= */
+.surface-raised {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+}
+.surface-elevated {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 8px 32px rgba(0,0,0,0.06);
+}
+.surface-floating {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 16px 60px rgba(0,0,0,0.08);
+}

@@ -1,0 +1,475 @@
+{
+  "users": [
+    {
+      "id": "user-1782208677133",
+      "name": "User 1430",
+      "email": "user1782208677133@test.com",
+      "phone": "+91 9150411430",
+      "role": "driver",
+      "password": "$2b$10$fjvMp3G4w8.oXeYHQEgxjuPYsB5j7Px386COL/GeI0uZE2hUPAfFy",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "owner-1782208720135",
+      "name": "owner",
+      "email": "owner@greencharge.in",
+      "phone": "+91 00000 00000",
+      "role": "owner",
+      "password": "$2b$10$oQKOelee.Yuw4Vu9D4dRYubF2U6H/5JB0/lt7V17gQ436SH8W2G0.",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "a"
+    },
+    {
+      "id": "user-1782209313554",
+      "name": "Suren Der",
+      "email": "suren@gmail.com",
+      "phone": "+919150411430",
+      "role": "owner",
+      "password": "$2b$10$Bp7uhW6WvRbkAxUJX7473u3drlf.m3P1q53U8tATyx9S3DqdPfzvm",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782209832277",
+      "name": "Surender",
+      "email": "darsuren121@gmail.com",
+      "phone": "+919150411430",
+      "role": "driver",
+      "password": "$2b$10$7UEfi37kVExCXQVwX0Yzk.bOgNUXt/onOH0yAfb9ayU1E85sXbn9W",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "owner-1782219858573",
+      "name": "owner-google",
+      "email": "owner-google@gmail.com",
+      "phone": "+91 00000 00000",
+      "role": "owner",
+      "password": "$2b$10$/RCDQ18upTpBNcAbXWkxIOT/L4aBGf7lBazbvXbF7czeuzmb0vudu",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782219867444",
+      "name": "driver-google",
+      "email": "driver-google@gmail.com",
+      "phone": "+91 00000 00000",
+      "role": "driver",
+      "password": "$2b$10$7koqjHyX69.1HGxBII7nfu.IEeqpkV4R2tRukqV10myH4rFvM0o0y",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782221046944",
+      "name": "suren",
+      "email": "1@gmail.com",
+      "phone": "",
+      "role": "driver",
+      "password": "$2b$10$8F.ETkHemUzhwFWvDi7wKu43znVNvJSp1uUeyXXW0KPaMdNGgIm2i",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782720156342",
+      "name": "admin",
+      "email": "admin@streetfit.com",
+      "phone": "+91 00000 00000",
+      "role": "driver",
+      "password": "$2b$10$jMKFZocj3QueVf5z2JLoOuN4Lb5iY0ogCH910iDZZgj4MYCelGmUq",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782720172676",
+      "name": "arun.kumar",
+      "email": "arun.kumar@email.com",
+      "phone": "+91 00000 00000",
+      "role": "driver",
+      "password": "$2b$10$LlvpT3/6z4j4VnEYgvLum.X1GQ62qUmv2Ioj8zSjq5ZF6YPr.TzXC",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "emergency-1782729106066",
+      "name": "new",
+      "email": "responder@emergency.in",
+      "phone": "5668878689",
+      "role": "emergency",
+      "password": "$2b$10$1G1OCauifSvjInbpW.uFGOyUQSv7K.pvKzfj7dFKjqGDG08mX1fpW",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "admin-1782729378149",
+      "name": "",
+      "email": "admin@chargefinder.com",
+      "phone": "",
+      "role": "admin",
+      "password": "$2b$10$HVR44CWSTKADujlcaCF7vOFvDkWEwXiz/wvEiaogJNahOYGT6VAhS",
+      "walletBalance": 0,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782729467608",
+      "name": "",
+      "email": "arun.kumar1@email.com",
+      "phone": "",
+      "role": "driver",
+      "password": "$2b$10$7tYwVVRKRNXwNUuNEsvHgeIXgIWn5Ape8002jAaKOQ/hQNbqvs6jm",
+      "walletBalance": 300,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "user-1782734939181",
+      "name": "",
+      "email": "arun.kumar11@email.com",
+      "phone": "",
+      "role": "driver",
+      "password": "$2b$10$PMZU4ZFMLDF3tqnzqH6pyO04fQsxe7yueQnhs5V62XftGGLK4uvvO",
+      "plainPassword": "a",
+      "walletBalance": 1000,
+      "favoriteStations": []
+    }
+  ],
+  "stations": [
+    {
+      "id": "station-1782209037885",
+      "name": "Beach Road",
+      "address": "Puducherry Main Bus Stand",
+      "lat": 11.93260708830418,
+      "lng": 79.81589379571925,
+      "pricePerKwh": 12,
+      "operatingHours": "6:00 AM – 10:00 PM",
+      "imageUrl": "https://images.pexels.com/photos/28851165/pexels-photo-28851165.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      "amenities": [
+        "WiFi",
+        "Restroom",
+        "Waiting Area"
+      ],
+      "connectors": [
+        {
+          "id": "c-1782209037885-0",
+          "type": "CHAdeMO",
+          "powerKw": 50,
+          "status": "available"
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "ownerId": "owner-1782208720135"
+    },
+    {
+      "id": "station-1782209048491",
+      "name": "dws",
+      "address": "sd",
+      "lat": 11.9416,
+      "lng": 79.8083,
+      "pricePerKwh": 14,
+      "operatingHours": "24/7",
+      "imageUrl": "https://images.pexels.com/photos/4678065/pexels-photo-4678065.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      "amenities": [],
+      "connectors": [
+        {
+          "id": "c-1782209048491-0",
+          "type": "CCS",
+          "powerKw": 50,
+          "status": "occupied"
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "ownerId": "owner-1782208720135"
+    },
+    {
+      "id": "station-1782209256419",
+      "name": "Road",
+      "address": "Puducherry",
+      "lat": 11.9416,
+      "lng": 79.8083,
+      "pricePerKwh": 14,
+      "operatingHours": "24/7",
+      "imageUrl": "https://images.pexels.com/photos/4678065/pexels-photo-4678065.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      "amenities": [
+        "WiFi",
+        "Waiting Area"
+      ],
+      "connectors": [
+        {
+          "id": "c-1782209256419-0",
+          "type": "CCS",
+          "powerKw": 50,
+          "status": "available"
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "ownerId": "owner-1782208720135"
+    },
+    {
+      "id": "station-1782209337809",
+      "name": "BEach road",
+      "address": "Puducherry",
+      "lat": 11.9416,
+      "lng": 79.8083,
+      "pricePerKwh": 14,
+      "operatingHours": "24/7",
+      "imageUrl": "https://images.pexels.com/photos/4678065/pexels-photo-4678065.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      "amenities": [],
+      "connectors": [
+        {
+          "id": "c-1782209337809-0",
+          "type": "CCS",
+          "powerKw": 50,
+          "status": "occupied"
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "ownerId": "user-1782209313554"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "booking-1782732750986",
+      "userId": "user-1782729467608",
+      "stationId": "station-1782209256419",
+      "stationName": "Road",
+      "connectorId": "c-1782209256419-0",
+      "connectorType": "CCS",
+      "date": "2026-06-29",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "status": "confirmed",
+      "amount": 350,
+      "qrCode": "CF-booking-1782732750986-station-1782209256419",
+      "createdAt": "2026-06-29T11:32:30.997Z",
+      "userName": ""
+    },
+    {
+      "id": "booking-1782732102459",
+      "userId": "user-1782729467608",
+      "stationId": "station-1782209337809",
+      "stationName": "BEach road",
+      "connectorId": "c-1782209337809-0",
+      "connectorType": "CCS",
+      "date": "2026-06-29",
+      "startTime": "17:00",
+      "endTime": "17:30",
+      "status": "in-progress",
+      "amount": 350,
+      "qrCode": "CF-booking-1782732102459-station-1782209337809",
+      "createdAt": "2026-06-29T11:21:42.497Z",
+      "userName": ""
+    },
+    {
+      "id": "booking-emg-1782729135772",
+      "userId": "emergency-1782729106066",
+      "stationId": "station-1782209048491",
+      "stationName": "dws",
+      "connectorId": "c-1782209048491-0",
+      "connectorType": "CCS",
+      "date": "2026-06-29",
+      "startTime": "16:02",
+      "endTime": "23:59",
+      "status": "in-progress",
+      "amount": 0,
+      "qrCode": "CF-EMG-booking-emg-1782729135772-station-1782209048491",
+      "createdAt": "2026-06-29T10:32:15.814Z"
+    },
+    {
+      "id": "booking-1782223138398",
+      "userId": "user-1782221046944",
+      "stationId": "station-1782209337809",
+      "stationName": "BEach road",
+      "connectorId": "c-1782209337809-0",
+      "connectorType": "CCS",
+      "date": "2026-06-23",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "status": "confirmed",
+      "amount": 700,
+      "qrCode": "CF-booking-1782223138398-station-1782209337809",
+      "createdAt": "2026-06-23T13:58:58.431Z"
+    },
+    {
+      "id": "booking-1782209911052",
+      "userId": "user-1782209832277",
+      "stationId": "station-1782209037885",
+      "stationName": "Beach Road",
+      "connectorId": "c-1782209037885-0",
+      "connectorType": "CHAdeMO",
+      "date": "2026-06-23",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "amount": 600,
+      "qrCode": "CF-booking-1782209911052-station-1782209037885",
+      "createdAt": "2026-06-23T10:18:31.092Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "txn-1782732750998",
+      "userId": "user-1782729467608",
+      "bookingId": "booking-1782732750986",
+      "stationId": "station-1782209256419",
+      "amount": 350,
+      "type": "payment",
+      "status": "success",
+      "description": "Booking at Road",
+      "createdAt": "2026-06-29T11:32:30.998Z"
+    },
+    {
+      "id": "txn-1782732697996",
+      "userId": "user-1782729467608",
+      "amount": 500,
+      "type": "top-up",
+      "status": "success",
+      "description": "Wallet top-up via UPI",
+      "createdAt": "2026-06-29T11:31:37.996Z"
+    },
+    {
+      "id": "txn-1782732102501",
+      "userId": "user-1782729467608",
+      "bookingId": "booking-1782732102459",
+      "stationId": "station-1782209337809",
+      "amount": 350,
+      "type": "payment",
+      "status": "success",
+      "description": "Booking at BEach road",
+      "createdAt": "2026-06-29T11:21:42.501Z"
+    },
+    {
+      "id": "txn-1782730976532",
+      "userId": "user-1782729467608",
+      "amount": 500,
+      "type": "top-up",
+      "status": "success",
+      "description": "Wallet top-up via UPI",
+      "createdAt": "2026-06-29T11:02:56.532Z"
+    },
+    {
+      "id": "txn-1782223138446",
+      "userId": "user-1782221046944",
+      "bookingId": "booking-1782223138398",
+      "amount": 700,
+      "type": "payment",
+      "status": "success",
+      "description": "Booking at BEach road",
+      "createdAt": "2026-06-23T13:58:58.446Z"
+    },
+    {
+      "id": "txn-1782209911118",
+      "userId": "user-1782209832277",
+      "bookingId": "booking-1782209911052",
+      "amount": 600,
+      "type": "payment",
+      "status": "success",
+      "description": "Booking at Beach Road",
+      "createdAt": "2026-06-23T10:18:31.118Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1782732750998-vea2",
+      "userId": "owner-1782208720135",
+      "title": "New Booking",
+      "message": " booked a CCS slot at Road.",
+      "type": "booking",
+      "read": true,
+      "createdAt": "2026-06-29T11:32:30.998Z"
+    },
+    {
+      "id": "notif-1782732750998-dztj",
+      "userId": "user-1782729467608",
+      "title": "Booking Confirmed",
+      "message": "Your booking at Road has been confirmed.",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-06-29T11:32:30.998Z"
+    },
+    {
+      "id": "notif-1782732697996-8ybu",
+      "userId": "user-1782729467608",
+      "title": "Wallet Top-Up",
+      "message": "₹500 added to your wallet successfully.",
+      "type": "system",
+      "read": false,
+      "createdAt": "2026-06-29T11:31:37.996Z"
+    },
+    {
+      "id": "notif-1782732397027-ptup",
+      "userId": "user-1782729467608",
+      "title": "Charging Started",
+      "message": "Your charging session at BEach road has started.",
+      "type": "charging",
+      "read": false,
+      "createdAt": "2026-06-29T11:26:37.027Z"
+    },
+    {
+      "id": "notif-1782732102501-7brz",
+      "userId": "user-1782209313554",
+      "title": "New Booking",
+      "message": " booked a CCS slot at BEach road.",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-06-29T11:21:42.501Z"
+    },
+    {
+      "id": "notif-1782732102501-fk2i",
+      "userId": "user-1782729467608",
+      "title": "Booking Confirmed",
+      "message": "Your booking at BEach road has been confirmed.",
+      "type": "booking",
+      "read": false,
+      "createdAt": "2026-06-29T11:21:42.501Z"
+    },
+    {
+      "id": "notif-1782730976532-qpsi",
+      "userId": "user-1782729467608",
+      "title": "Wallet Top-Up",
+      "message": "₹500 added to your wallet successfully.",
+      "type": "system",
+      "read": false,
+      "createdAt": "2026-06-29T11:02:56.532Z"
+    },
+    {
+      "id": "notif-1782729135815-729m",
+      "userId": "owner-1782208720135",
+      "title": "Emergency Override",
+      "message": "An emergency vehicle has preempted a slot at dws.",
+      "type": "booking",
+      "read": true,
+      "createdAt": "2026-06-29T10:32:15.815Z"
+    },
+    {
+      "id": "notif-1782223138446",
+      "title": "Booking Confirmed",
+      "message": "Your booking at BEach road has been confirmed.",
+      "type": "booking",
+      "read": true,
+      "createdAt": "2026-06-23T13:58:58.446Z"
+    },
+    {
+      "id": "notif-1782209911118",
+      "title": "Booking Confirmed",
+      "message": "Your booking at Beach Road has been confirmed.",
+      "type": "booking",
+      "read": true,
+      "createdAt": "2026-06-23T10:18:31.118Z"
+    }
+  ]
+}
