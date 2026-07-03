@@ -140,7 +140,7 @@
       "role": "driver",
       "password": "$2b$10$PMZU4ZFMLDF3tqnzqH6pyO04fQsxe7yueQnhs5V62XftGGLK4uvvO",
       "plainPassword": "a",
-      "walletBalance": 1000,
+      "walletBalance": 2000,
       "favoriteStations": []
     }
   ],
@@ -322,6 +322,15 @@
   ],
   "transactions": [
     {
+      "id": "txn-1783050403558",
+      "userId": "user-1782734939181",
+      "amount": 1000,
+      "type": "top-up",
+      "status": "success",
+      "description": "Wallet top-up via UPI",
+      "createdAt": "2026-07-03T03:46:43.558Z"
+    },
+    {
       "id": "txn-1782732750998",
       "userId": "user-1782729467608",
       "bookingId": "booking-1782732750986",
@@ -383,6 +392,15 @@
     }
   ],
   "notifications": [
+    {
+      "id": "notif-1783050403559-87zq",
+      "userId": "user-1782734939181",
+      "title": "Wallet Top-Up",
+      "message": "₹1000 added to your wallet successfully.",
+      "type": "system",
+      "read": false,
+      "createdAt": "2026-07-03T03:46:43.559Z"
+    },
     {
       "id": "notif-1782732750998-vea2",
       "userId": "owner-1782208720135",
