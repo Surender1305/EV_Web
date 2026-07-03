@@ -142,6 +142,28 @@
       "plainPassword": "a",
       "walletBalance": 2000,
       "favoriteStations": []
+    },
+    {
+      "id": "user-sample-1",
+      "name": "Sample Driver",
+      "email": "driver1@sample.com",
+      "phone": "+91 98765 43210",
+      "role": "driver",
+      "password": "$2b$10$fjvMp3G4w8.oXeYHQEgxjuPYsB5j7Px386COL/GeI0uZE2hUPAfFy",
+      "walletBalance": 500,
+      "favoriteStations": [],
+      "plainPassword": "password123"
+    },
+    {
+      "id": "owner-sample-1",
+      "name": "Sample Owner",
+      "email": "owner1@sample.com",
+      "phone": "+91 87654 32109",
+      "role": "owner",
+      "password": "$2b$10$fjvMp3G4w8.oXeYHQEgxjuPYsB5j7Px386COL/GeI0uZE2hUPAfFy",
+      "walletBalance": 1000,
+      "favoriteStations": [],
+      "plainPassword": "password123"
     }
   ],
   "stations": [
@@ -239,6 +261,103 @@
       "rating": 4.5,
       "reviewCount": 0,
       "ownerId": "user-1782209313554"
+    },
+    {
+      "id": "station-sample-1",
+      "name": "Chennai Central EV Hub",
+      "address": "Chennai Central Railway Station, Chennai",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "pricePerKwh": 15,
+      "operatingHours": "24/7",
+      "imageUrl": "https://images.pexels.com/photos/1124549/pexels-photo-1124549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "amenities": [
+        "WiFi",
+        "Restroom",
+        "Cafe",
+        "Waiting Area"
+      ],
+      "connectors": [
+        {
+          "id": "c-sample-1-0",
+          "type": "CCS",
+          "powerKw": 150,
+          "status": "available"
+        },
+        {
+          "id": "c-sample-1-1",
+          "type": "CHAdeMO",
+          "powerKw": 50,
+          "status": "occupied"
+        },
+        {
+          "id": "c-sample-1-2",
+          "type": "Type 2",
+          "powerKw": 22,
+          "status": "available"
+        }
+      ],
+      "rating": 4.8,
+      "reviewCount": 124,
+      "ownerId": "owner-sample-1"
+    },
+    {
+      "id": "station-sample-2",
+      "name": "Bangalore Tech Park Chargers",
+      "address": "Electronic City, Bangalore",
+      "lat": 12.8399,
+      "lng": 77.677,
+      "pricePerKwh": 18,
+      "operatingHours": "6:00 AM – 11:00 PM",
+      "imageUrl": "https://images.pexels.com/photos/258169/pexels-photo-258169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "amenities": [
+        "WiFi",
+        "Food Court",
+        "Parking"
+      ],
+      "connectors": [
+        {
+          "id": "c-sample-2-0",
+          "type": "CCS",
+          "powerKw": 60,
+          "status": "available"
+        },
+        {
+          "id": "c-sample-2-1",
+          "type": "CCS",
+          "powerKw": 60,
+          "status": "available"
+        }
+      ],
+      "rating": 4.2,
+      "reviewCount": 56,
+      "ownerId": "owner-sample-1"
+    },
+    {
+      "id": "station-sample-3",
+      "name": "Highway Rest Stop Charge",
+      "address": "NH 48, Mumbai Pune Expressway",
+      "lat": 18.75,
+      "lng": 73.4,
+      "pricePerKwh": 20,
+      "operatingHours": "24/7",
+      "imageUrl": "https://images.pexels.com/photos/10313360/pexels-photo-10313360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "amenities": [
+        "Restroom",
+        "Dhaba",
+        "Tire Repair"
+      ],
+      "connectors": [
+        {
+          "id": "c-sample-3-0",
+          "type": "CCS",
+          "powerKw": 250,
+          "status": "available"
+        }
+      ],
+      "rating": 4.9,
+      "reviewCount": 312,
+      "ownerId": "owner-1782208720135"
     }
   ],
   "bookings": [
@@ -318,6 +437,22 @@
       "amount": 600,
       "qrCode": "CF-booking-1782209911052-station-1782209037885",
       "createdAt": "2026-06-23T10:18:31.092Z"
+    },
+    {
+      "id": "booking-sample-1",
+      "userId": "user-sample-1",
+      "stationId": "station-sample-1",
+      "stationName": "Chennai Central EV Hub",
+      "connectorId": "c-sample-1-0",
+      "connectorType": "CCS",
+      "date": "2026-07-03",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "status": "confirmed",
+      "amount": 450,
+      "qrCode": "CF-booking-sample-1",
+      "createdAt": "2026-07-03T04:07:41.006Z",
+      "userName": "Sample Driver"
     }
   ],
   "transactions": [
